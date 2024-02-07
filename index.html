@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeMon</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <h1 class="header animate__animated animate__fadeInDown">
+      <img
+        src="./pngimg.com - pokemon_logo_PNG14.png"
+        alt=""
+        class="nav-heading"
+        width="300px"
+      />
+    </h1>
+    <div class="container">
+      <div class="select-container">
+        <div class="form-select">
+          <input
+            type="text"
+            id="search"
+            class="animate__animated animate__fadeInRight"
+            placeholder="Search your PokeMon Here...!"
+          /><br />
+          <select name="" id="select" class="animate__animated animate__fadeInLeft">
+            <option disabled selected value="">Type</option></select
+          ><br />
+          <button>Filter By Type</button>
+          <button>Reset</button>
+        </div>
+        <div class="pokemon-container animate__animated animate__fadeInDown"></div>
+      </div>
+      <div id="display-container">
+        <div class="preview">
+          <h2>Display Your Pokemon Here</h2>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
